@@ -8,8 +8,9 @@ public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "emp_id")
-    private int id;
-    
-    private String emp_name;
-    private String emp_email;
+    private long id;
+    @Column(name = "emp_name")
+    private String name;
+    @Column(name = "emp_email")
+    private String email;
 }
