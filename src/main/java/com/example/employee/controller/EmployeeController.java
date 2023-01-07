@@ -20,7 +20,7 @@ public class EmployeeController {
     }
 
     @GetMapping
-    @RequestMapping(value = "/employees")
+    @RequestMapping(value = "/getEmployees")
     public List<Employee> readEmployees(){
         return employeeService.listEmployees();
     }
